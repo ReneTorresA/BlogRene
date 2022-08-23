@@ -28,23 +28,19 @@ const Cursos = () => {
   ];
     
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
       
       <div className="container">
         <div className="row ms-auto d-flex mb-5 justify-content-center text-center">
-        <h1>Listado de cursos</h1>
-          <div className="col-4 d-flex justify-content-center">
+        <h1 className="text-info mb-3">Listado de cursos variados</h1>
+          <div className="mb-5 col-4 d-flex justify-content-center">
             <Card item={tarjetas[0]} />
-          </div>
-
-          <div className="col-4 d-flex justify-content-center">
-            <Card item={tarjetas[1]} />
           </div>
         </div>
       </div>
       <Footers />
-    </>
+    </div>
   );
 };
 

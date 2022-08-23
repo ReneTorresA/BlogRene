@@ -6,11 +6,6 @@ import {Outlet} from 'react-router-dom'
 
 
 const Plantillacourse = () => {
-  const users = [
-    { id: '1', fullName: 'Robin Wieruch' },
-    { id: '2', fullName: 'Sarah Finnley' },
-  ];
-
   return (
     <div className="container">
       <Navbar />

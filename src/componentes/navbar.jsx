@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg mb-5 navbar-dark bg-dark">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/">
-          El Blog de René Torres
+        <NavLink className="text-success navbar-brand" to="/">
+          El Blog de René Torres 👺
         </NavLink>
         <button
           className="navbar-toggler"
@@ -21,27 +21,27 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-rg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a className="nav-link text-info active" aria-current="page" href="/">
                 Inicio
               </a>
             </li>
             <li className="nav-item">
               <a
-                className="nav-link active"
+                className="text-info nav-link active"
                 aria-current="page"
-                href="/articulos"
+                href="/universidad"
               >
-                Artículos
+                Ayudantías Usach
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
-                Cursos
+              <a className="text-info nav-link active" aria-current="page" href="/cursos">
+                Cursos variados
               </a>
             </li>
             <li className="nav-item">
               <a
-                className="nav-link active"
+                className="text-info nav-link active"
                 aria-current="page"
                 href="/contacto"
               >

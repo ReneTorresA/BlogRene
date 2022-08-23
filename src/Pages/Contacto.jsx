@@ -2,12 +2,12 @@ import Navbar from "../componentes/navbar";
 import Footers from "../componentes/footer";
 
 const Contacto = () => {
-  return (
-    <div className="container">
+  return (<div className="d-flex flex-column min-vh-100">
       <Navbar />
-
-      <h1>PÁGINA DE CONTACTO</h1>
-
+      <div className="container text-center">
+        <h1>¿Te gustaría contactarme? Mandame un correo a:</h1>
+        <h2 className="text-warning">renetorresop@gmail.com</h2>
+      </div>
       <Footers />
     </div>
   );

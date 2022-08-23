@@ -1,6 +1,6 @@
 import { NavLink ,Link, Navigate} from "react-router-dom";
 
-function Card({item}) {
+function Card2({item}) {
   return (
     <div className="card border-secondary">
       <h6 className="card-subtitle mb-1 text-muted text-end mt-1">{item.fecha}</h6>
@@ -9,7 +9,7 @@ function Card({item}) {
         <h5 className="card-title ">{item.titulo}</h5>
         <p className="card-text ">
           {item.descripcion}
-          <Link to={`/cursos/${item.id}`} className="stretched-link"></Link>
+          <Link to={item.ruta} className="stretched-link"></Link>
         </p>
         <p className="card-text text-start text-muted">Por René Torres</p>
       </div>
@@ -17,4 +17,4 @@ function Card({item}) {
   );
 }
 
-export default Card;
+export default Card2;

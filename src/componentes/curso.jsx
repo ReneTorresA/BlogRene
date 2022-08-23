@@ -31,13 +31,16 @@ const Curso = () => {
   return (
     <>
       <Navbar />
-      <div className="container mt-5">
+      <div className="container mt-5 min-vh-100">
         <h2>{urls[id].title}</h2>
         <div className="row">
           <div className="col-9">{componentevideo}</div>
           <Descrip1 id={id} />
         </div>
-        <Link to="/cursos">Volver al inicio</Link>
+        <div>
+        <Link to="/cursos">Volver al inicio OJO</Link>
+        </div>
+        
       </div>
       <Footers />
     </>
