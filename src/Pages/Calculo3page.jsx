@@ -32,13 +32,8 @@ function Calculo3page() {
     data: [
       {
         id: "1",
-        name: "Límites",
-        link: "https://www.delftstack.com/es/howto/react/for-loop-in-react/#:~:text=Tratar%20con%20datos%20complejos%20de,para%20la%20interfaz%20de%20usuario.",
-      },
-      {
-        id: "2",
-        name: "Derivada",
-        link: "https://www.youtube.com/results?search_query=for+en+react+para+mostrar+html",
+        name: "Ayudantía 1: Series de Fourier",
+        link: "https://drive.google.com/file/d/1BH1TKW-cZAixMegqaYjwCpdPHrZyWQEr/view",
       },
     ],
     fecha: "",
@@ -73,7 +68,10 @@ function Calculo3page() {
                 </Container>
               </Modal.Body>
               <Modal.Footer>
-                <Button variant="secondary btn-outline-light" onClick={handleClose2}>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose2}
+                >
                   Cerrar
                 </Button>
               </Modal.Footer>
@@ -107,8 +105,6 @@ function Calculo3page() {
             </Modal>
           </>
         </div>
-
-        
       </div>
 
       <Footers />
