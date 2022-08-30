@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes,browserHistory } from "react-router-dom";
+import { BrowserRouter, Route, Routes,HashRouter } from "react-router-dom";
 import Contacto from "./Pages/Contacto";
 import Homepage from "./Pages/Homepage";
 import "bootswatch/dist/darkly/bootstrap.min.css"
@@ -10,7 +10,7 @@ import Calculo3page from "./Pages/Calculo3page";
 import Metnum from "./Pages/Metnumpage";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
       <Route path="/"  element={<Homepage />} />
         <Route path="universidad" element={<Universidad/>}></Route>
@@ -22,7 +22,7 @@ function App() {
         <Route path="*" element={<Notfound404 />}></Route>
       </Routes>
       
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
