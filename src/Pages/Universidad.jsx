@@ -29,11 +29,11 @@ const Universidad = () => {
         <div className="row ms-auto d-flex mb-5 justify-content-center text-center">
         <div className="mb-3"><h1>Ayudantías Universidad 🐔 </h1></div>
         
-        <div className="col-6 d-flex justify-content-center">
+        <div className="col-md-6 d-flex justify-content-center">
           <Card2 item={tarjetas[0]} />
         </div>
 
-        <div className="col-6 d-flex justify-content-center ">
+        <div className="col-md-6 d-flex justify-content-center ">
           <Card2 item={tarjetas[1]} />
         </div>
       </div>
