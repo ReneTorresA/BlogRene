@@ -23,17 +23,17 @@ const Universidad = () => {
     },
   ];
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column min-vh-100 justify-content-center">
       <Navbar />
       <div className="container">
-        <div className="row ms-auto d-flex mb-5 justify-content-center text-center">
-        <div className="mb-3"><h1>Ayudantías Universidad 🐔 </h1></div>
+        <div className="row d-flex mb-5 ">
+        <div className="mb-3 text-center"><h1>Ayudantías Universidad 🐔 </h1></div>
         
-        <div className="col-md-6 d-flex justify-content-center">
+        <div className="col-md-6 d-flex mb-2">
           <Card2 item={tarjetas[0]} />
         </div>
 
-        <div className="col-md-6 d-flex justify-content-center ">
+        <div className="col-md-6 d-flex mb-2">
           <Card2 item={tarjetas[1]} />
         </div>
       </div>

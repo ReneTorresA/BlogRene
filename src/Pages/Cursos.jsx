@@ -34,7 +34,7 @@ const Cursos = () => {
       <Navbar />
       
       <div className="container">
-        <div className="row ms-auto d-flex mb-5 justify-content-center text-center">
+        <div className="row  d-flex mb-5 justify-content-center text-center">
         <h1 className="text-info mb-3">Tutoriales y vídeos variados</h1>
           <div className="mb-5 col-md-4 d-flex justify-content-center">
             <Card item={tarjetas[0]} />
