@@ -51,7 +51,7 @@ const Curso = () => {
           <div className="col-9">{componentevideo}</div>
           <Descrip1 id={id} urlss={urls} />
           <div className="ms-3 mt-3 col-3">
-            <Link className="btn btn-outline-warning" type="button" to="/reactapp/cursos">Volver</Link></div>
+            <Link className="btn btn-outline-warning" type="button" to="/cursos">Volver</Link></div>
           
         </div>
 
