@@ -12,7 +12,6 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-      <Route path="/blogrene"  element={<Homepage />} />
       <Route path="/"  element={<Homepage />} />
         <Route path="universidad" element={<Universidad/>}></Route>
         <Route path="contacto" element={<Contacto />}></Route>
