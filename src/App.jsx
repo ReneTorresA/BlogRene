@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/"  element={<Homepage />} />
+        <Route path="/reactapp"  element={<Homepage />} />
         <Route path="universidad" element={<Universidad/>}></Route>
         <Route path="contacto" element={<Contacto />}></Route>
         <Route path="/universidad/metnum" element={<Metnum />}></Route> 
