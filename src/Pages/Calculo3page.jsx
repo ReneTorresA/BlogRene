@@ -18,7 +18,7 @@ function Calculo3page() {
 
   const Calculo3info = {
     id: "0",
-    ruta: "/reactapp/cursos",
+    ruta: "/cursos",
     titulo:
       "Calculo 3 - Apuntes de clase y ayudantías preparados por René Torres.",
     descripcion:

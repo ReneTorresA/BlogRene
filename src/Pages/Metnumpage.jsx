@@ -6,7 +6,7 @@ import PlantillaCurso from "../componentes/plantillacursos";
 function Metnum() {
   const Metnuminfo = {
     id: "0",
-    ruta: "/reactapp/cursos",
+    ruta: "/cursos",
     titulo:
       "Métodos Numéricos - Ayudantías preparados por René Torres.",
     descripcion:

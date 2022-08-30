@@ -9,7 +9,7 @@ const Homepage = () => {
   const tarjetas = [
     {
       id: "0",
-      ruta:"/reactapp/cursos",
+      ruta:"/cursos",
       titulo:
         "Cursos Variados 💻",
       descripcion:
@@ -20,7 +20,7 @@ const Homepage = () => {
     },
     {
       id: "1",
-      ruta:"/reactapp/universidad",
+      ruta:"/universidad",
       titulo:
         "Ayudantías Universidad 🎓",
       descripcion:
