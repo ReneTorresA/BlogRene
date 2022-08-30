@@ -5,7 +5,7 @@ const Universidad = () => {
   const tarjetas = [
     {
       id: "0",
-      ruta: "/universidad/calculo3",
+      ruta: "/reactapp/universidad/calculo3",
       titulo: "Cálculo III para Ingeniería 💀",
       descripcion:
         "Papeo de cálculo 3 🐵",
@@ -14,7 +14,7 @@ const Universidad = () => {
     },
     {
       id: "1",
-      ruta: "/universidad/metnum",
+      ruta: "/reactapp/universidad/metnum",
       titulo: "Métodos Numéricos para Ingeniería Mecánica",
       descripcion:
         "Aquí encontrarás material y guías para la asignatura de métodos numéricos para ingeniería mecánica",

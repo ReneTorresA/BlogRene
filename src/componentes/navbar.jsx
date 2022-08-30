@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg mb-5 navbar-dark bg-dark">
       <div className="container-fluid">
-        <NavLink className="text-success navbar-brand" to="/">
+        <NavLink className="text-success navbar-brand" to="reactapp/">
           El Blog de René Torres 👺
         </NavLink>
         <button
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-rg-0">
             <li className="nav-item">
-              <a className="nav-link text-info active" aria-current="page" href="/">
+              <a className="nav-link text-info active" aria-current="page" href="reactapp/">
                 Inicio
               </a>
             </li>
@@ -29,13 +29,13 @@ const Navbar = () => {
               <a
                 className="text-info nav-link active"
                 aria-current="page"
-                href="/universidad"
+                href="/reactapp/universidad"
               >
                 Ayudantías Usach
               </a>
             </li>
             <li className="nav-item">
-              <a className="text-info nav-link active" aria-current="page" href="/cursos">
+              <a className="text-info nav-link active" aria-current="page" href="reactapp/cursos">
                 Cursos variados
               </a>
             </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
               <a
                 className="text-info nav-link active"
                 aria-current="page"
-                href="/contacto"
+                href="reactapp/contacto"
               >
                 Contacto
               </a>

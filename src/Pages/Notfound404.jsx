@@ -11,7 +11,7 @@ const Notfound404 = () => {
           <span className="text-danger">Opps!</span> Página no encontrada.
         </p>
         <p className="lead">La página que estas buscando no existe.</p>
-        <Link to="/" className="btn btn-secondary">
+        <Link to="/reactapp/" className="btn btn-secondary">
           Ir a Inicio
         </Link>
       </div>

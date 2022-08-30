@@ -9,7 +9,7 @@ function Card({item}) {
         <h5 className="card-title ">{item.titulo}</h5>
         <p className="card-text ">
           {item.descripcion}
-          <Link to={`/cursos/${item.id}`} className="stretched-link"></Link>
+          <Link to={`/reactapp/cursos/${item.id}`} className="stretched-link"></Link>
         </p>
         <p className="card-text text-start text-muted">Por René Torres</p>
       </div>
