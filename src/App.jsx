@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,browserHistory } from "react-router-dom";
 import Contacto from "./Pages/Contacto";
 import Homepage from "./Pages/Homepage";
 import "bootswatch/dist/darkly/bootstrap.min.css"
@@ -12,14 +12,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/reactapp"  element={<Homepage />} />
-        <Route path="universidad" element={<Universidad/>}></Route>
-        <Route path="contacto" element={<Contacto />}></Route>
-        <Route path="/universidad/metnum" element={<Metnum />}></Route> 
-        <Route path="/universidad/calculo3" element={<Calculo3page />}></Route> 
-        <Route path="cursos" element={<Cursos/>}></Route>
-        <Route path="/cursos/:id" element={<Curso />} />
-        <Route path="*" element={<Notfound404 />}></Route>
+        <Route path="/reactapp/"  element={<Homepage />} />
+        <Route path="reactapp/universidad" element={<Universidad/>}></Route>
+        <Route path="reactapp/contacto" element={<Contacto />}></Route>
+        <Route path="reactapp//universidad/metnum" element={<Metnum />}></Route> 
+        <Route path="reactapp//universidad/calculo3" element={<Calculo3page />}></Route> 
+        <Route path="reactapp/cursos" element={<Cursos/>}></Route>
+        <Route path="reactapp/cursos/:id" element={<Curso />} />
+        <Route path="reactapp/*" element={<Notfound404 />}></Route>
       </Routes>
       
     </BrowserRouter>
