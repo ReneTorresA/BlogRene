@@ -103,7 +103,7 @@ const PlantillaCurso = ({ info }) => {
 
           <div>ㅤ</div>
           <div className="col-lg-12">
-            <h1 className="h3 text-center">Ayudantías grabadas</h1>
+            <h1 className="h3 text-center">Ayudantías grabadas (en proceso)</h1>
           </div>
         </div>
       </section>
