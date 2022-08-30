@@ -35,11 +35,11 @@ const Homepage = () => {
 
           <div className="col-md-6 d-flex justify-content-center mb-2">
 
-              <Card2 item={tarjetas[0]} />
+              <Card2 item={tarjetas[1]} />
 
           </div>
           <div className="col-md-6 d-flex justify-content-center mb-2">
-              <Card2 item={tarjetas[1]} />
+              <Card2 item={tarjetas[0]} />
           </div>
         </div>
       </div>
