@@ -38,12 +38,12 @@ const Homepage = () => {
         <div className="row ms-auto d-flex mb-5 justify-content-center text-center">
         <h1 className="text-info mb-5">Listado de cursos</h1>
           
-          <div className="col-6 d-flex justify-content-center">
+          <div className="col-md-6 d-flex justify-content-center">
             <Card2 item={tarjetas[0]} />
           
           </div>
 
-          <div className="col-6 d-flex justify-content-center ">
+          <div className="col-md-6 d-flex justify-content-center ">
           <Card2 item={tarjetas[1]} />
           </div>
         </div>
