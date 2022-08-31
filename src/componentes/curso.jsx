@@ -10,8 +10,14 @@ const Curso = () => {
       url: "https://www.youtube.com/embed/wT_J8nzB9g4",
       title: "Hostear minecraft server sin mods",
       recursos: [
-        { titulo: "Minecraft server", link: "https://www.minecraft.net/en-us/download/server" },
-        { titulo: "Java kit", link: "https://www.oracle.com/java/technologies/downloads/#jdk18-windows" },
+        {
+          titulo: "Minecraft server",
+          link: "https://www.minecraft.net/en-us/download/server",
+        },
+        {
+          titulo: "Java kit",
+          link: "https://www.oracle.com/java/technologies/downloads/#jdk18-windows",
+        },
         { titulo: "Ngrok", link: "https://ngrok.com/" },
       ],
     },
@@ -19,10 +25,21 @@ const Curso = () => {
       url: "https://www.youtube.com/embed/BS7L5sbnAjU",
       title: "Crear servidor de minecraft con mods",
       recursos: [
-        { titulo: "Ngrok", link: "https://ngrok.com/", id:"1" },
-        { titulo: "Server Forge", link: "https://files.minecraftforge.net/net/minecraftforge/forge/" ,id:"2"},
-        { titulo: "Java kit", link: "https://www.oracle.com/java/technologies/downloads/#jdk18-windows" },
-        { titulo: "Página para descargar mods", link: "https://www.curseforge.com/minecraft/modpacks" ,id:"3"},
+        { titulo: "Ngrok", link: "https://ngrok.com/", id: "1" },
+        {
+          titulo: "Server Forge",
+          link: "https://files.minecraftforge.net/net/minecraftforge/forge/",
+          id: "2",
+        },
+        {
+          titulo: "Java kit",
+          link: "https://www.oracle.com/java/technologies/downloads/#jdk18-windows",
+        },
+        {
+          titulo: "Página para descargar mods",
+          link: "https://www.curseforge.com/minecraft/modpacks",
+          id: "3",
+        },
       ],
     },
   ];
@@ -47,14 +64,19 @@ const Curso = () => {
       <Navbar />
       <div className="container mt-5 min-vh-100">
         <h2>{urls[id].title}</h2>
-        <div className="row">
-          <div className="col-md-9">{componentevideo}</div>
-          <Descrip1 id={id} urlss={urls} />
+        <div className="row ">
+          <div className="col-md-9 d-flex  justify-content-center " >{componentevideo}</div>
+            <Descrip1  id={id} urlss={urls} />
           <div className="mt-3">
-            <Link className="btn btn-outline-warning" type="button" to="/cursos">Volver</Link></div>
-          
+            <Link
+              className="btn btn-outline-warning "
+              type="button"
+              to="/cursos"
+            >
+              Volver
+            </Link>
+          </div>
         </div>
-
       </div>
       <Footers />
     </>
