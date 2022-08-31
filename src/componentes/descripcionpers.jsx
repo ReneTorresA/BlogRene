@@ -4,7 +4,7 @@ function Descrip1({id , urlss }) {
   
   console.log(urlss[id].recursos[0].titulo)
   console.log({id})
-  return <div className="list-group col-3 text-center">
+  return <div className="list-group mb-2 col-md-3 text-center col-sm-12">
   <h3>Enlaces</h3>
   {urlss[id].recursos.map((items)=>(
   

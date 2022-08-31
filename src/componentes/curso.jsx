@@ -30,7 +30,7 @@ const Curso = () => {
   let componentevideo;
   if (parseInt(id) <= urls.length - 1) {
     componentevideo = (
-      <div className="ratio ratio-16x9">
+      <div className="ratio ratio-16x9 mb-2">
         <iframe
           src={urls[id].url}
           title={urls[id].title}
@@ -48,9 +48,9 @@ const Curso = () => {
       <div className="container mt-5 min-vh-100">
         <h2>{urls[id].title}</h2>
         <div className="row">
-          <div className="col-9">{componentevideo}</div>
+          <div className="col-md-9">{componentevideo}</div>
           <Descrip1 id={id} urlss={urls} />
-          <div className="ms-3 mt-3 col-3">
+          <div className="mt-3">
             <Link className="btn btn-outline-warning" type="button" to="/cursos">Volver</Link></div>
           
         </div>
