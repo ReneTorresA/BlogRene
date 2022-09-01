@@ -1,11 +1,11 @@
 {
   "name": "blogrene",
-  "homepage": "http://apuntesrene.me/blogrene",
+  "homepage": "http://apuntesrene.me",
   "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run build && echo apuntesrene.me/blogrene > ./dist/CNAME",
+    "predeploy":"npm run build && echo apuntesrene.me > ./dist/CNAME",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
