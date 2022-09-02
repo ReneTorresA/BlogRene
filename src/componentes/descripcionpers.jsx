@@ -10,7 +10,7 @@ function Descrip1({id , urlss }) {
   <h3 className="ms-1">Enlaces</h3>
   {urlss[id].recursos.map((items)=>(
   
-  <Link className="btn btn-default mb-2 ms-1 list-group-item  d-flex  justify-content-center align-items-center list-group-item-action" key={items.id} to={items.link} target="_blank" type="button">{items.titulo}</Link>
+  <a className="btn btn-default mb-2 ms-1 list-group-item  d-flex  justify-content-center align-items-center list-group-item-action" key={items.id} href={items.link} target="_blank" type="button">{items.titulo}</a>
   
   ))}
 
