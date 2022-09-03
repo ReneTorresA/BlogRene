@@ -31,7 +31,7 @@ const Homepage = () => {
 
       <div className="container">
         <div className="row mb-5 d-flex justify-content-center text-center">
-          <h1 className="text-info mb-5">Listado de cursos</h1>
+          <h1 className="mb-5">Listado de cursos</h1>
 
           <div className="col-md-6 d-flex justify-content-center mb-2">
 

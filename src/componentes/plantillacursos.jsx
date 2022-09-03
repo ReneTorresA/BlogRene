@@ -92,7 +92,7 @@ const PlantillaCurso = ({ info }) => {
                     href={datoss.link}
                     target="_blank"
                     type="button"
-                    className="btn btn-default list-group-item list-group-item-action "
+                    className="btn btn-default mb-1 list-group-item list-group-item-action "
                   >
                     {datoss.name}
                   </a>

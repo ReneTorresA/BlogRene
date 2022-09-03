@@ -47,7 +47,7 @@ const Cursos = () => {
       
       <div className="container">
         <div className="row  d-flex mb-5 justify-content-center text-center">
-        <h1 className="text-info mb-3">Tutoriales y vídeos variados</h1>
+        <h1 className="mb-3">Tutoriales y vídeos variados</h1>
           <div className="mb-5 col-md-4 d-flex justify-content-center">
             <Card item={tarjetas[2]} />
           </div>

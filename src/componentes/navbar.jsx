@@ -4,30 +4,30 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg mb-5 navbar-dark bg-dark">
       <div className="container-fluid">
-        <NavLink className="text-success navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/">
           El Blog de René Torres 👺
         </NavLink>
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarColor02">
           <ul className="navbar-nav ms-auto mb-2 mb-rg-0">
             <li className="nav-item">
-              <NavLink className="nav-link text-info active" aria-current="page" to="/">
+              <NavLink className="nav-link" aria-current="page" to="/">
                 Inicio
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                className="text-info nav-link active"
+                className="nav-link"
                 aria-current="page"
                 to="/universidad"
               >
@@ -35,13 +35,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="text-info nav-link active" aria-current="page" to="/cursos">
+              <NavLink className="nav-link" aria-current="page" to="/cursos">
                 Cursos variados
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                className="text-info nav-link active"
+                className="nav-link"
                 aria-current="page"
                 to="/contacto"
               >

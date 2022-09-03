@@ -48,9 +48,9 @@ function Calculo3page() {
       <div className="container col-lg-12">
         <div className="list-group">
           <>
-            <Button variant="secondary btn-outline-light" onClick={handleShow2}>
-              Bad bunny Neverita
-            </Button>
+            <button type="button" className="btn btn-dark mb-1" variant="secondary btn-outline-light" onClick={handleShow2}>
+              Bad bunny Neverita a 
+            </button>
 
             <Modal size="xl" centered show={show2} onHide={handleClose2}>
               <Modal.Header closeButton></Modal.Header>
@@ -79,9 +79,9 @@ function Calculo3page() {
           </>
 
           <>
-            <Button variant="secondary btn-outline-light" onClick={handleShow}>
+            <button className="btn btn-dark" onClick={handleShow}>
               Bad Bunny Neverita
-            </Button>
+            </button>
 
             <Modal size="xl" centered show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
