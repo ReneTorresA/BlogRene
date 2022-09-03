@@ -42,6 +42,14 @@ const Curso = () => {
         },
       ],
     },
+
+    {
+      url: "https://www.youtube.com/embed/GbiU18y3zag",
+      title: "Tesis USACH en Overleaf - Tutorial",
+      recursos: [
+        { titulo: "Plantilla", link: "https://drive.google.com/file/d/1X5PUbomqKxDBr7t1e5RgYf5zPAHpfCWj/view", id: "1" },
+      ],
+    },
   ];
 
   let componentevideo;
@@ -65,8 +73,10 @@ const Curso = () => {
       <div className="container mt-5 min-vh-100">
         <h2>{urls[id].title}</h2>
         <div className="row ">
-          <div className="col-md-9 d-flex  justify-content-center " >{componentevideo}</div>
-            <Descrip1  id={id} urlss={urls} />
+          <div className="col-md-9 d-flex  justify-content-center ">
+            {componentevideo}
+          </div>
+          <Descrip1 id={id} urlss={urls} />
           <div className="mt-3">
             <Link
               className="btn btn-outline-warning "

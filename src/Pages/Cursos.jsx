@@ -27,6 +27,18 @@ const Cursos = () => {
 
         
     },
+    {
+      id: "2",
+      titulo:
+        "Tesis USACH en Overleaf / tutorial más tips y consejos",
+      descripcion:
+        "Plantilla de Overleaf para hacer la tesis en la USACH y un tutorial enseñando a usar Overleaf más tips y cosejos útiles.",
+      fecha: "03/09/2022",
+      imagen:
+        "https://i.postimg.cc/KvPwNj0Q/2.png",
+
+        
+    },
   ];
     
   return (
@@ -36,6 +48,9 @@ const Cursos = () => {
       <div className="container">
         <div className="row  d-flex mb-5 justify-content-center text-center">
         <h1 className="text-info mb-3">Tutoriales y vídeos variados</h1>
+          <div className="mb-5 col-md-4 d-flex justify-content-center">
+            <Card item={tarjetas[2]} />
+          </div>
           <div className="mb-5 col-md-4 d-flex justify-content-center">
             <Card item={tarjetas[0]} />
           </div>
