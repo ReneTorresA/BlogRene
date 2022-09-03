@@ -7,8 +7,7 @@ function Metnum() {
   const Metnuminfo = {
     id: "0",
     ruta: "/cursos",
-    titulo:
-      "Métodos Numéricos - Ayudantías preparados por René Torres.",
+    titulo: "Métodos Numéricos - Ayudantías preparados por René Torres.",
     descripcion:
       "Difunde el contenido para que a alguien más le ayude. Si encuentras algún error en los ejercicios por favor comunícate conmigo al correo: rene.torres.a@usach.cl",
     profesor: "René Torres",
@@ -18,10 +17,14 @@ function Metnum() {
     nivel: "Hardcore",
     herramientas: ["Estudiar mucho!"],
     data: [
-        {
-            name:"(PEP 1) Guía 0 : Repaso de programación Matlab",
-            link:"https://drive.google.com/file/d/1uD1VL65WYIVTxh5cBOYdWuQL5rRGR4B1/view",
-        },
+      {
+        name: "(PEP 1) Guía 0 : Repaso de programación Matlab",
+        link: "https://drive.google.com/file/d/1uD1VL65WYIVTxh5cBOYdWuQL5rRGR4B1/view",
+      },
+      {
+        name: "(PEP 1) Guía 1 : Ajuste de curvas",
+        link: "https://drive.google.com/file/d/1KQ97HFbbuningWYvNd8NujoD0c2gldlZ/view",
+      },
       {
         name: "(PEP 2) Sistemas de ecuaciones lineales",
         link: "https://drive.google.com/file/d/1lVf7jpz1uxdlLQQt4sUJJOY41pfdSJVs/view",
@@ -31,8 +34,8 @@ function Metnum() {
         link: "https://drive.google.com/file/d/1-EXRUXBCnc8I3dOWUoyJSZhRXoUvSNU3/view",
       },
       {
-        name:"(PEP 2) Sitemas de ecuaciones diferenciales y ecuación diferencial de 2do orden",
-        link:"https://drive.google.com/file/d/1KnIZhrfV94QcbojF2AC47KIC3uIOZPWW/view",
+        name: "(PEP 2) Sitemas de ecuaciones diferenciales y ecuación diferencial de 2do orden",
+        link: "https://drive.google.com/file/d/1KnIZhrfV94QcbojF2AC47KIC3uIOZPWW/view",
       },
     ],
     fecha: "",
@@ -43,7 +46,7 @@ function Metnum() {
     <>
       <Navbar />
       <PlantillaCurso info={Metnuminfo} />
-    {/*
+      {/*
       <div className="container col-lg-12">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
