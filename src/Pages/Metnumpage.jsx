@@ -1,9 +1,23 @@
 import React, { useState } from "react";
 import Footers from "../componentes/footer";
 import Navbar from "../componentes/navbar";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Container from "react-bootstrap/Container";
 import PlantillaCurso from "../componentes/plantillacursos";
-
 function Metnum() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
+  const itemsvideo = [
+    {
+      id: "0",
+      titulo: "Ayudantía 1: Repaso Matlab Primera Parte",
+      urlvideo: "https://www.youtube.com/embed/dIlu6kmpyn8",
+    },
+  ];
+  console.log(itemsvideo[0].urlvideo)
   const Metnuminfo = {
     id: "0",
     ruta: "/cursos",
@@ -46,108 +60,47 @@ function Metnum() {
     <>
       <Navbar />
       <PlantillaCurso info={Metnuminfo} />
-      {/*
+
       <div className="container col-lg-12">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Series de Fourier
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow}
             >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Límites y continuidad
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Derivadas parciales
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
+              {itemsvideo[0].titulo}
+            </button>
+
+            <Modal size="xl" centered show={show} onHide={handleClose}>
+              <Modal.Header closeButton></Modal.Header>
+              <Modal.Body>
+                <Container>
+                  <div className="container-fluid text-center">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item videos-modales"
+                        src={itemsvideo[0].urlvideo}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </Container>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
         </div>
       </div>
-    */}
 
       <Footers />
     </>
