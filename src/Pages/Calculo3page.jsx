@@ -15,7 +15,13 @@ function Calculo3page() {
   const [show2, setShow2] = useState(false);
   const handleClose2 = () => setShow2(false);
   const handleShow2 = () => setShow2(true);
-
+  const itemsvideo = [
+    {
+      id: "0",
+      titulo: "Ayudantía 2: Serie de Fourier",
+      urlvideo: "https://www.youtube.com/embed/Df8eoo_gmEo",
+    },
+  ];
   const Calculo3info = {
     id: "0",
     ruta: "/cursos",
@@ -32,8 +38,13 @@ function Calculo3page() {
     data: [
       {
         id: "1",
-        name: "Ayudantía 1: Series de Fourier",
+        name: "Ayudantía 1: Series de Fourier (ejercicio resuelto)",
         link: "https://drive.google.com/file/d/1BH1TKW-cZAixMegqaYjwCpdPHrZyWQEr/view",
+      },
+      {
+        id:"2",
+        name:"Guía Series de Fourier",
+        link:"https://drive.google.com/file/d/1Acr2tzCJOXO3mfyomUf2HQ90lRBfuQak/view",
       },
     ],
     fecha: "",
@@ -44,43 +55,16 @@ function Calculo3page() {
     <>
       <Navbar />
       <PlantillaCurso info={Calculo3info} />
-
       <div className="container col-lg-12">
-        <div className="list-group">
+        <div className="list-group mb-3">
           <>
-            <button type="button" className="btn btn-dark mb-1" variant="secondary btn-outline-light" onClick={handleShow2}>
-              Bad bunny Neverita a 
-            </button>
-
-            <Modal size="xl" centered show={show2} onHide={handleClose2}>
-              <Modal.Header closeButton></Modal.Header>
-              <Modal.Body>
-                <Container>
-                  <div className="container-fluid text-center">
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        className="embed-responsive-item videos-modales"
-                        src="https://www.youtube.com/embed/ARWg160eaX4"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </Container>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button
-                  variant="secondary btn-outline-light"
-                  onClick={handleClose2}
-                >
-                  Cerrar
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </>
-
-          <>
-            <button className="btn btn-dark" onClick={handleShow}>
-              Bad Bunny Neverita
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow}
+            >
+              {itemsvideo[0].titulo}
             </button>
 
             <Modal size="xl" centered show={show} onHide={handleClose}>
@@ -88,29 +72,32 @@ function Calculo3page() {
               <Modal.Body>
                 <Container>
                   <div className="container-fluid text-center">
-                    <div className="embed-responsive embed-responsive-16by9">
+                    <div className="embed-responsive embed-responsive-16by9  ">
                       <iframe
                         className="embed-responsive-item videos-modales"
-                        src="https://www.youtube.com/embed/ARWg160eaX4"
+                        src={itemsvideo[0].urlvideo}
                         allowFullScreen
                       ></iframe>
                     </div>
                   </div>
                 </Container>
               </Modal.Body>
+
               <Modal.Footer>
-                <Button variant="btn-secondary" onClick={handleClose}>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose}
+                >
                   Cerrar
                 </Button>
               </Modal.Footer>
             </Modal>
           </>
-
-          
         </div>
+        
       </div>
-
       <Footers />
+      
     </>
   );
 }
