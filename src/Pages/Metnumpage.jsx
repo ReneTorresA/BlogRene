@@ -7,15 +7,24 @@ import Container from "react-bootstrap/Container";
 import PlantillaCurso from "../componentes/plantillacursos";
 function Metnum() {
   const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleClose2 = () => setShow2(false);
+  const handleShow2 = () => setShow2(true);
   
   const itemsvideo = [
     {
       id: "0",
-      titulo: "Ayudantía 1: Repaso Matlab Primera Parte",
+      titulo: "Ayudantía 1: Repaso Matlab (Parte 1)",
       urlvideo: "https://www.youtube.com/embed/dIlu6kmpyn8",
     },
+
+    {
+      id:"1",
+      titulo:"Ayudantía 1: Repaso Matlab (Parte 2)",
+      urlvideo: "https://www.youtube.com/embed/-9VS9JfxJG8",
+    }
   ];
   console.log(itemsvideo[0].urlvideo)
   const Metnuminfo = {
@@ -101,7 +110,60 @@ function Metnum() {
           </>
         </div>
       </div>
+      <div className="container col-lg-12">
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow2}
+            >
+              {itemsvideo[1].titulo}
+            </button>
 
+            <Modal size="xl" centered show={show2} onHide={handleClose2}>
+              <Modal.Header closeButton></Modal.Header>
+              <Modal.Body>
+                <Container>
+                  <div className="container-fluid text-center">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item videos-modales"
+                        src={itemsvideo[1].urlvideo}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </Container>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose2}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
+        </div>
+      </div>
+      
+      <div className="container col-lg-12">
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+            >
+              {'Ajuste de curvas (próximamente)'}
+            </button>
+          </>
+        </div>
+      </div>
       <Footers />
     </>
   );
