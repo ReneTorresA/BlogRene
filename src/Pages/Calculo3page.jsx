@@ -18,8 +18,13 @@ function Calculo3page() {
   const itemsvideo = [
     {
       id: "0",
-      titulo: "Ayudantía 2: Serie de Fourier",
+      titulo: "(Fourier) Ejercicio serie de Fourier",
       urlvideo: "https://www.youtube.com/embed/Df8eoo_gmEo",
+    },
+    {
+      id: "1",
+      titulo: "Límites y continuidad",
+      urlvideo: "https://www.youtube.com/embed/jwaf7Sf0MBQ",
     },
   ];
   const Calculo3info = {
@@ -30,6 +35,7 @@ function Calculo3page() {
     descripcion:
       "Difunde el contenido para que a alguien más le ayude. Si encuentras algún error en los ejercicios por favor comunícate conmigo al correo: rene.torres.a@usach.cl",
     profesor: "René Torres",
+    warning:"Todo lo que diga (Fourier) corresponde a la sección de cálculo avanzando",
     duracion: "--",
     foto: "https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     alt: "Imagen de un pizarrón con ejercicios",
@@ -38,13 +44,18 @@ function Calculo3page() {
     data: [
       {
         id: "1",
-        name: "Ayudantía 1: Series de Fourier (ejercicio resuelto)",
+        name: "(Fourier) Series de Fourier (ejercicio resuelto)",
         link: "https://drive.google.com/file/d/1BH1TKW-cZAixMegqaYjwCpdPHrZyWQEr/view",
       },
       {
         id:"2",
-        name:"Guía Series de Fourier",
+        name:"(Fourier) Guía Series de Fourier",
         link:"https://drive.google.com/file/d/1Acr2tzCJOXO3mfyomUf2HQ90lRBfuQak/view",
+      },
+      {
+        id:"3",
+        name:"Guía Límites y Continuidad",
+        link:"https://drive.google.com/file/d/1FXHB6561N-XSkY3IDgWrkdtqf7u5tis4/view",
       },
     ],
     fecha: "",
@@ -55,8 +66,10 @@ function Calculo3page() {
     <>
       <Navbar />
       <PlantillaCurso info={Calculo3info} />
+
+      
       <div className="container col-lg-12">
-        <div className="list-group mb-3">
+        <div className="list-group mb-1">
           <>
             <button
               type="button"
@@ -96,6 +109,52 @@ function Calculo3page() {
         </div>
         
       </div>
+
+      <div className="container col-lg-12">
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow2}
+            >
+              {itemsvideo[1].titulo}
+            </button>
+
+            <Modal size="xl" centered show={show2} onHide={handleClose2}>
+              <Modal.Header closeButton></Modal.Header>
+              <Modal.Body>
+                <Container>
+                  <div className="container-fluid text-center">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item videos-modales"
+                        src={itemsvideo[1].urlvideo}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </Container>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose2}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
+        </div>
+      </div>
+
+
+
+
+
       <Footers />
       
     </>
