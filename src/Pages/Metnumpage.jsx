@@ -59,6 +59,10 @@ function Metnum() {
         link: "https://drive.google.com/file/d/1KQ97HFbbuningWYvNd8NujoD0c2gldlZ/view",
       },
       {
+        name:"Código interpolación de Newton (ayudantía presencial Jueves 22/09/2022)",
+        link:"https://drive.google.com/file/d/1xYr_mqLX3B-U4eB3rJzxZc7FfaCSUMjd/view",
+      },
+      {
         name: "(PEP 2) Sistemas de ecuaciones lineales",
         link: "https://drive.google.com/file/d/1lVf7jpz1uxdlLQQt4sUJJOY41pfdSJVs/view",
       },
@@ -79,7 +83,7 @@ function Metnum() {
     <>
       <Navbar />
       <PlantillaCurso info={Metnuminfo} />
-
+      
       <div className="container col-lg-12">
         <div className="list-group">
           <>
