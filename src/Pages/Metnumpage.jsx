@@ -9,6 +9,8 @@ function Metnum() {
   const [show, setShow] = useState(false);
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+  const [show5, setShow5] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -18,6 +20,12 @@ function Metnum() {
 
   const handleClose3 = () => setShow3(false);
   const handleShow3 = () => setShow3(true);
+
+  const handleClose4 = () => setShow4(false);
+  const handleShow4 = () => setShow4(true);
+
+  const handleClose5 = () => setShow5(false);
+  const handleShow5 = () => setShow5(true);
   const itemsvideo = [
     {
       id: "0",
@@ -34,6 +42,16 @@ function Metnum() {
       id: "2",
       titulo: "Ayudantía 2: Ajuste de Curvas",
       urlvideo: "https://www.youtube.com/embed/XR0VafgB_3M",
+    },
+    {
+      id:"3",
+      titulo: "Ayudantía de derivación Numérica",
+      urlvideo: "https://www.youtube.com/embed/dUjB3NCsYlk",
+    },
+    {
+      id:"4",
+      titulo: "Ayudantía de Integración Numérica",
+      urlvideo: "https://www.youtube.com/embed/C0PIJnGPXDE",
     },
   ];
   console.log(itemsvideo[0].urlvideo);
@@ -207,6 +225,89 @@ function Metnum() {
         </div>
       </div>
 
+
+
+      <div className="container col-lg-12">
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow4}
+            >
+              {itemsvideo[3].titulo}
+            </button>
+
+            <Modal size="xl" centered show={show4} onHide={handleClose4}>
+              <Modal.Header closeButton></Modal.Header>
+              <Modal.Body>
+                <Container>
+                  <div className="container-fluid text-center">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item videos-modales"
+                        src={itemsvideo[3].urlvideo}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </Container>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose4}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
+        </div>
+      </div>
+
+      <div className="container col-lg-12">
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow5}
+            >
+              {itemsvideo[4].titulo}
+            </button>
+
+            <Modal size="xl" centered show={show5} onHide={handleClose5}>
+              <Modal.Header closeButton></Modal.Header>
+              <Modal.Body>
+                <Container>
+                  <div className="container-fluid text-center">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item videos-modales"
+                        src={itemsvideo[4].urlvideo}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </Container>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose5}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
+        </div>
+      </div>
       <Footers />
     </>
   );
