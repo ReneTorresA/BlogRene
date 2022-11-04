@@ -11,6 +11,7 @@ function Metnum() {
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
   const [show5, setShow5] = useState(false);
+  const [show6, setShow6] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -26,6 +27,10 @@ function Metnum() {
 
   const handleClose5 = () => setShow5(false);
   const handleShow5 = () => setShow5(true);
+
+  
+  const handleClose6 = () => setShow6(false);
+  const handleShow6 = () => setShow6(true);
   const itemsvideo = [
     {
       id: "0",
@@ -52,6 +57,11 @@ function Metnum() {
       id:"4",
       titulo: "Ayudantía de Integración Numérica",
       urlvideo: "https://www.youtube.com/embed/C0PIJnGPXDE",
+    },
+    {
+      id:"5",
+      titulo: "Raíces de ecuaciones ayudantía L24/10/2022",
+      urlvideo: "https://www.youtube.com/embed/L0UPX2eR86s",
     },
   ];
   console.log(itemsvideo[0].urlvideo);
@@ -308,6 +318,68 @@ function Metnum() {
           </>
         </div>
       </div>
+
+
+
+      <div className="container col-lg-12">
+        <div className="list-group">
+          <>
+            <button
+              type="button"
+              className="btn btn-dark mb-1"
+              variant="secondary btn-outline-light"
+              onClick={handleShow6}
+            >
+              {itemsvideo[5].titulo}
+            </button>
+
+            <Modal size="xl" centered show={show6} onHide={handleClose6}>
+              <Modal.Header closeButton></Modal.Header>
+              <Modal.Body>
+                <Container>
+                  <div className="container-fluid text-center">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        className="embed-responsive-item videos-modales"
+                        src={itemsvideo[5].urlvideo}
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </Container>
+              </Modal.Body>
+
+              <Modal.Footer>
+                <Button
+                  variant="secondary btn-outline-light"
+                  onClick={handleClose6}
+                >
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <Footers />
     </>
   );
